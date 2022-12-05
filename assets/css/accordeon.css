@@ -1,0 +1,42 @@
+.accordeon-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordeon-title h2::after{
+    content: "\02795";
+    float: right;
+}
+
+.accordeon-item.active .accordeon-title h2::after{
+    content: "\02796";
+    float: right;
+}
+
+.accordeon-item.active .accordeon-title{
+    background-color: red;
+    color: white;
+}
+
+.accordeon-title{
+    background-color: #efefef;
+    margin: 5px 0;
+    padding: 10px;    
+}
+
+.accordeon-item{
+    cursor: pointer;
+}
+
+.unlisted{
+    list-style: none;
+}
+
+.unlisted li{
+    padding: 8px;
+}
+
+.accordeon-content{
+    background-color: beige;
+    display: none;
+}
